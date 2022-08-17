@@ -26,4 +26,24 @@ const station = {
   ],
 };
 
-module.exports = station;
+const station2 = {
+  name: "Dunmore",
+  readings: [
+    {
+      code: "700",
+      temp: "8.0",
+      windspeed: "1.0",
+      pressure: "999",
+    },
+    {
+      code: "200",
+      temp: "0.5",
+      windspeed: "3.5",
+      pressure: "1000",
+    },
+  ],
+};
+
+const stationCollection = [station, station2];
+
+module.exports = stationCollection;

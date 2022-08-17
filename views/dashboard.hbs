@@ -1,8 +1,10 @@
 {{> menu id="dashboard"}}
 
+{{#each stations}}
 <section class="ui segment">
   <h2 class="ui header">
-    Tramore
+    {{title}}
   </h2>
   {{> listreadings}}
 </section>
+{{/each}}
