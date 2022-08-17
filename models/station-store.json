@@ -9,21 +9,24 @@
           "code": "100",
           "temp": "1.0",
           "windspeed": "2.0",
-          "pressure": "3.0"
+          "pressure": "2.0",
+          "winddir":  "95"
         },
         {
           "id":  "04",
           "code": "200",
           "temp": "1.0",
           "windspeed": "2.0",
-          "pressure": "3.0"
+          "pressure": "2.0",
+          "winddir":  "95"
         },
         {
           "id":  "05",
           "code": "300",
           "temp": "1.0",
           "windspeed": "2.0",
-          "pressure": "3.0"
+          "pressure": "2.0",
+          "winddir":  "95"
         }
       ]
     },
@@ -36,21 +39,24 @@
           "code": "400",
           "temp": "1.0",
           "windspeed": "2.0",
-          "pressure": "3.0"
+          "pressure": "2.0",
+          "winddir":  "95"
         },
         {
           "id":  "07",
           "code": "500",
           "temp": "1.0",
           "windspeed": "2.0",
-          "pressure": "3.0"
+          "pressure": "2.0",
+          "winddir":  "95"
         },
         {
           "id":  "08",
           "code": "600",
           "temp": "1.0",
           "windspeed": "2.0",
-          "pressure": "3.0"
+          "pressure": "2.0",
+          "winddir":  "95"
         }
       ]
     }
