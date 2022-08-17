@@ -1,43 +1,58 @@
 {
   "stationCollection": [
     {
-  name: "Tramore",
-  readings: [
-    {
-      code: "800",
-      temp: "0.5",
-      windspeed: "3.5",
-      pressure: "1002",
+      "id":  "01",
+      "name": "Tramore",
+      "readings": [
+        {
+          "id":  "03",
+          "code": "100",
+          "temp": "1.0",
+          "windspeed": "2.0",
+          "pressure": "3.0"
+        },
+        {
+          "id":  "04",
+          "code": "200",
+          "temp": "1.0",
+          "windspeed": "2.0",
+          "pressure": "3.0"
+        },
+        {
+          "id":  "05",
+          "code": "300",
+          "temp": "1.0",
+          "windspeed": "2.0",
+          "pressure": "3.0"
+        }
+      ]
     },
     {
-      code: "600",
-      temp: "6.0",
-      windspeed: "2.0",
-      pressure: "1004",
-    },
-    {
-      code: "700",
-      temp: "8.0",
-      windspeed: "1.0",
-      pressure: "1005",
+      "id":  "02",
+      "name": "Dunmore",
+      "readings": [
+        {
+          "id":  "06",
+          "code": "400",
+          "temp": "1.0",
+          "windspeed": "2.0",
+          "pressure": "3.0"
+        },
+        {
+          "id":  "07",
+          "code": "500",
+          "temp": "1.0",
+          "windspeed": "2.0",
+          "pressure": "3.0"
+        },
+        {
+          "id":  "08",
+          "code": "600",
+          "temp": "1.0",
+          "windspeed": "2.0",
+          "pressure": "3.0"
+        }
+      ]
     }
-  ],
-    },
-  {
-    name: "Dunmore",
-    readings: [
-      {
-        code: "700",
-        temp: "8.0",
-        windspeed: "1.0",
-        pressure: "999",
-      },
-      {
-        code: "200",
-        temp: "0.5",
-        windspeed: "3.5",
-        pressure: "1000",
-      }
-    ],
-  }
-};
+  ]
+}
