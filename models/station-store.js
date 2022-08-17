@@ -1,23 +1,27 @@
-'use strict';
+"use strict";
 
-const logger = require('../utils/logger');
+const logger = require("../utils/logger");
 
 const station = {
-  name: 'Tramore',
+  name: "Tramore",
   readings: [
     {
-      code: '800',
-      temp: '0.5',
-      windspeed: '3.5',
-      pressure: '1002',
+      code: "800",
+      temp: "0.5",
+      windspeed: "3.5",
+      pressure: "1002",
     },
     {
-      title: 'Piano Sonata No. 7',
-      artist: 'Beethoven',
+      code: "600",
+      temp: "6.0",
+      windspeed: "2.0",
+      pressure: "1004",
     },
     {
-      title: 'Piano Sonata No. 10',
-      artist: 'Beethoven',
+      code: "700",
+      temp: "8.0",
+      windspeed: "1.0",
+      pressure: "1005",
     },
   ],
 };
