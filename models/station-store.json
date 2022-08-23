@@ -3,60 +3,56 @@
     {
       "id":  "01",
       "name": "Tramore",
+      "lat": "52.1609",
+      "lng": "-7.1524",
       "readings": [
         {
+          "id":  "02",
+          "code": "800",
+          "temp": "0.5",
+          "windSpeed": "3.5",
+          "pressure": "1002",
+          "windDir":  "90"
+        },
+        {
           "id":  "03",
-          "code": "100",
-          "temp": "1.0",
-          "windspeed": "2.0",
-          "pressure": "2.0",
-          "winddir":  "95"
+          "code": "600",
+          "temp": "6",
+          "windSpeed": "2",
+          "pressure": "1004",
+          "windDir":  "96"
         },
         {
           "id":  "04",
-          "code": "200",
-          "temp": "1.0",
-          "windspeed": "2.0",
-          "pressure": "2.0",
-          "winddir":  "95"
-        },
-        {
-          "id":  "05",
-          "code": "300",
-          "temp": "1.0",
-          "windspeed": "2.0",
-          "pressure": "2.0",
-          "winddir":  "95"
+          "code": "700",
+          "temp": "8",
+          "windSpeed": "1",
+          "pressure": "1005",
+          "windDir":  "101"
         }
       ]
     },
     {
-      "id":  "02",
+      "id":  "05",
       "name": "Dunmore",
+      "lat": "52.149",
+      "lng": "-6.994",
       "readings": [
         {
           "id":  "06",
-          "code": "400",
-          "temp": "1.0",
-          "windspeed": "2.0",
-          "pressure": "2.0",
-          "winddir":  "95"
+          "code": "700",
+          "temp": "8",
+          "windSpeed": "1",
+          "pressure": "999",
+          "windDir":  "98"
         },
         {
           "id":  "07",
-          "code": "500",
-          "temp": "1.0",
-          "windspeed": "2.0",
-          "pressure": "2.0",
-          "winddir":  "95"
-        },
-        {
-          "id":  "08",
-          "code": "600",
-          "temp": "1.0",
-          "windspeed": "2.0",
-          "pressure": "2.0",
-          "winddir":  "95"
+          "code": "200",
+          "temp": "0.5",
+          "windSpeed": "3.5",
+          "pressure": "1000",
+          "windDir":  "102"
         }
       ]
     }

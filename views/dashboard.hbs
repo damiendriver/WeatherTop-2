@@ -5,37 +5,9 @@
   <h2 class="ui header">
     {{name}}
   </h2>
-  <table class="ui table">
-      <thead>
-        <tr>
-           <th>Code</th>
-      <th>Temp</th>
-      <th>Wind Speed</th>
-      <th>Pressure</th>
-          <th>Wind Direction</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each readings}}
-          <tr>
-            <td>
-              {{code}}
-            </td>
-            <td>
-              {{temp}}
-            </td>
-            <td>
-              {{windspeed}}
-            </td>
-            <td>
-              {{pressure}}
-            </td>
-            <td>
-              {{winddir}}
-            </td>
-          </tr>
-        {{/each}}
-      </tbody>
-    </table>
+  <p>
+     {{> latestreadings}}
+  </p>
+  <a href="/station/{{id}}"> View </a>
 </section>
 {{/each}}
