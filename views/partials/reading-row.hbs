@@ -1,0 +1,22 @@
+{{#each station.readings}}
+  <tr>
+    <td>
+      {{code}}
+    </td>
+    <td>
+      {{temp}}
+    </td>
+    <td>
+      {{windSpeed}}
+    </td>
+    <td>
+      {{pressure}}
+    </td>
+    <td>
+      {{windDir}}
+    </td>
+    <td>
+          <a href="/station/{{../station.id}}/deletereading/{{id}}" class="ui tiny red button">Delete</a>
+    </td>
+  </tr>
+{{/each}}

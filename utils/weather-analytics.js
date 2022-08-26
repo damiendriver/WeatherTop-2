@@ -13,6 +13,7 @@ const weatherAnalytics = {
       station.degreesToCompass = weatherAnalytics.degreesToCompass(latestReading.windDir);
       station.windChill = weatherAnalytics.windChill(latestReading.temp, latestReading.windSpeed).toFixed(2);
       station.codeIcon = this.codeIcon(latestReading.code);
+      station.codeWeather = this.codeWeather(latestReading.code);
       station.maxTemp = weatherAnalytics.getMaxTemp(station);
       station.minTemp = weatherAnalytics.getMinTemp(station);
       station.maxWindSpeed = weatherAnalytics.getMaxWindSpeed(station);

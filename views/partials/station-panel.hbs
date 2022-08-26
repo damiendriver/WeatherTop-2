@@ -1,0 +1,67 @@
+<div class="ui inverted yellow segment">
+  <div class="ui five stackable inverted grey cards">
+    <div class="card">
+    <span class="content left">
+        <h2> <i class="map marker inverted grey icon"></i> {{name}}</h2>
+        <br />
+        <p>Lat: {{lat}}</p>
+        <p>Lng: {{lng}}</p>
+      </span>  
+    </div>
+    
+    <div class="card">
+      <span class="content left">
+        <h2>Weather <i class="{{codeIcon}}"></i></h2>
+        <br />{{codeWeather}}
+      </span>
+    </div>
+    
+     <div class="card">
+      <span class="content left">
+        <h2>Temp <i class="large temperature low red icon"></i></h2>
+        <br />{{tempC}}
+        C
+        <br />{{tempF}}
+        F
+        <br />
+        <br />Max:
+        {{maxTemp}}
+        <br />Min:
+        {{minTemp}}
+        <i class="{{getTempTrend}}"></i>
+      </span>
+    </div>
+    
+     <div class="card">
+      <span class="content left">
+        <h2>Wind <i class="large wind blue icon"></i></h2>
+        <br />{{windBft}}
+        BFT
+        <br />{{codeToString}}
+        <br />{{degreesToCompass}}
+        <br />Feels like:
+        {{windChill}}
+        <br />Max:
+        {{maxWindSpeed}}
+        <br />Min:
+        {{minWindSpeed}}
+        <i class="{{getWindTrend}}"></i>
+      </span>
+    </div>
+    
+   <div class="card">
+      <span class="content left">
+        <h2>Pressure <i class="large compass arrows purple icon"></i></h2>
+        <br />{{pressure}}
+        HPA
+        <br />
+        <br />Max:
+        {{maxPressure}}
+        <br />Min:
+        {{minPressure}}
+        <i class="{{getPressureTrend}}"></i>
+      </span>
+    </div>
+    
+  </div>
+</div>

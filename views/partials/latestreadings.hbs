@@ -1,18 +1,18 @@
-<div class="ui inverted grey segment">
-  <div class="ui five stackable inverted yellow cards">
+<div class="ui inverted blue segment">
+  <div class="ui five stackable inverted grey cards">
     <div class="card">
-      <span class="content left">
+    <span class="content left">
         <h2> <i class="map marker inverted grey icon"></i> {{station.name}}</h2>
         <br />
         <p>Lat: {{station.lat}}</p>
         <p>Lng: {{station.lng}}</p>
-      </span>
+      </span>  
     </div>
 
     <div class="card">
       <span class="content left">
         <h2>Weather <i class="{{station.codeIcon}}"></i></h2>
-        <br />{{station.code}}
+        <br />{{station.codeWeather}}
       </span>
     </div>
 
