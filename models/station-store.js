@@ -23,6 +23,15 @@ const stationStore = {
     _.remove(this.stationCollection, { id: id });
   },
   
+  addReading(id, reading) {
+    const station = this.getStation(id);
+    station.readings.push(reading);
+  },
+  
+  addStation(station) {
+  this.stationCollection.push(station);
+},
+  
 };
 
 module.exports = stationStore;
