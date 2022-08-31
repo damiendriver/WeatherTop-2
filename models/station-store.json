@@ -1,60 +1,237 @@
 {
   "stationCollection": [
     {
-      "id":  "01",
-      "name": "Tramore",
-      "lat": "52.1609",
-      "lng": "-7.1524",
+      "id": "79357500-2937-11ed-9339-9d7e42635bc8",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Kilrane",
+      "lat": "52.2419",
+      "lng": "6.3549",
       "readings": [
         {
-          "id":  "02",
+          "id": "0040cf10-293b-11ed-8146-154830a9dab8",
+          "code": "100",
+          "temp": "25",
+          "windSpeed": "45",
+          "pressure": "999",
+          "windDir": "875"
+        }
+      ],
+      "latestReading": {
+        "id": "0040cf10-293b-11ed-8146-154830a9dab8",
+        "code": "100",
+        "temp": "25",
+        "windSpeed": "45",
+        "pressure": "999",
+        "windDir": "875"
+      },
+      "code": "100",
+      "windBft": 6,
+      "tempF": "77.00",
+      "pressure": "999",
+      "tempC": "25",
+      "degreesToCompass": "North",
+      "windChill": "25.98",
+      "codeIcon": "ui inverted yellow sun outline icon",
+      "codeWeather": "Clear",
+      "maxTemp": "25",
+      "minTemp": "25",
+      "maxWindSpeed": "45",
+      "minWindSpeed": "45",
+      "maxPressure": "999",
+      "minPressure": "999"
+    },
+    {
+      "id": "fb0a0d70-293c-11ed-943c-e9c31ae36d71",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Rosslare Harbour",
+      "lat": "52.2513",
+      "lng": "6.3415",
+      "readings": [
+        {
+          "id": "0a434cc0-293d-11ed-943c-e9c31ae36d71",
+          "code": "800",
+          "temp": "12",
+          "windSpeed": "6",
+          "pressure": "1009",
+          "windDir": "999"
+        }
+      ],
+      "latestReading": {
+        "id": "0a434cc0-293d-11ed-943c-e9c31ae36d71",
+        "code": "800",
+        "temp": "12",
+        "windSpeed": "6",
+        "pressure": "1009",
+        "windDir": "999"
+      },
+      "code": "800",
+      "windBft": 1,
+      "tempF": "53.60",
+      "pressure": "1009",
+      "tempC": "12",
+      "degreesToCompass": "North",
+      "windChill": "11.77",
+      "codeIcon": "ui inverted white snowflake outline icon",
+      "codeWeather": "Snow",
+      "maxTemp": "12",
+      "minTemp": "12",
+      "maxWindSpeed": "6",
+      "minWindSpeed": "6",
+      "maxPressure": "1009",
+      "minPressure": "1009"
+    },
+    {
+      "id": "395cd540-296e-11ed-89bc-c3cf438d50ae",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Tramore",
+      "lat": "52.16",
+      "lng": "-7.152",
+      "readings": [
+        {
+          "id": "57257f50-296e-11ed-89bc-c3cf438d50ae",
           "code": "800",
           "temp": "0.5",
           "windSpeed": "3.5",
           "pressure": "1002",
-          "windDir":  "90"
+          "windDir": "90"
         },
         {
-          "id":  "03",
+          "id": "66130fa0-296e-11ed-89bc-c3cf438d50ae",
           "code": "600",
           "temp": "6",
           "windSpeed": "2",
           "pressure": "1004",
-          "windDir":  "96"
+          "windDir": "96"
         },
         {
-          "id":  "04",
-          "code": "700",
+          "id": "e8ff94d0-2980-11ed-b334-c9834b329cda",
+          "code": "250",
+          "temp": "15",
+          "windSpeed": "15",
+          "pressure": "950",
+          "windDir": "85",
+          "date": "2022-08-31T23:01:55.997Z"
+        }
+      ],
+      "latestReading": {
+        "id": "66130fa0-296e-11ed-89bc-c3cf438d50ae",
+        "code": "600",
+        "temp": "6",
+        "windSpeed": "2",
+        "pressure": "1004",
+        "windDir": "96"
+      },
+      "code": "600",
+      "windBft": 1,
+      "tempF": "42.80",
+      "pressure": "1004",
+      "tempC": "6",
+      "degreesToCompass": "East South East",
+      "windChill": "6.80",
+      "codeIcon": "ui blue cloud showers heavy icon",
+      "codeWeather": "Heavy Showers",
+      "maxTemp": "6",
+      "minTemp": "0.5",
+      "maxWindSpeed": "3.5",
+      "minWindSpeed": "2",
+      "maxPressure": "1004",
+      "minPressure": "1002"
+    },
+    {
+      "id": "94c19790-296e-11ed-89bc-c3cf438d50ae",
+      "userid": "2ac50a10-2942-11ed-83a7-c1264e7afbfe",
+      "name": "Wexford",
+      "lat": "52.3369",
+      "lng": "-6.4633",
+      "readings": [
+        {
+          "id": "ac9969b0-296e-11ed-89bc-c3cf438d50ae",
+          "code": "600",
           "temp": "8",
           "windSpeed": "1",
           "pressure": "1005",
-          "windDir":  "101"
+          "windDir": "98"
         }
-      ]
+      ],
+      "latestReading": {
+        "id": "ac9969b0-296e-11ed-89bc-c3cf438d50ae",
+        "code": "600",
+        "temp": "8",
+        "windSpeed": "1",
+        "pressure": "1005",
+        "windDir": "98"
+      },
+      "code": "600",
+      "windBft": 1,
+      "tempF": "46.40",
+      "pressure": "1005",
+      "tempC": "8",
+      "degreesToCompass": "East South East",
+      "windChill": "9.89",
+      "codeIcon": "ui blue cloud showers heavy icon",
+      "codeWeather": "Heavy Showers",
+      "maxTemp": "8",
+      "minTemp": "8",
+      "maxWindSpeed": "1",
+      "minWindSpeed": "1",
+      "maxPressure": "1005",
+      "minPressure": "1005"
     },
     {
-      "id":  "05",
-      "name": "Dunmore",
-      "lat": "52.149",
-      "lng": "-6.994",
+      "id": "d2264c20-296e-11ed-89bc-c3cf438d50ae",
+      "userid": "2ac50a10-2942-11ed-83a7-c1264e7afbfe",
+      "name": "Kilmore",
+      "lat": "52.1757",
+      "lng": "-6.58639",
       "readings": [
         {
-          "id":  "06",
-          "code": "700",
-          "temp": "8",
-          "windSpeed": "1",
-          "pressure": "999",
-          "windDir":  "98"
-        },
-        {
-          "id":  "07",
+          "id": "e618f4d0-296e-11ed-89bc-c3cf438d50ae",
           "code": "200",
           "temp": "0.5",
           "windSpeed": "3.5",
           "pressure": "1000",
-          "windDir":  "102"
+          "windDir": "102"
+        },
+        {
+          "id": "f0588d70-296e-11ed-89bc-c3cf438d50ae",
+          "code": "100",
+          "temp": "5.5",
+          "windSpeed": "5.5",
+          "pressure": "999",
+          "windDir": "92"
+        },
+        {
+          "id": "05c700b0-296f-11ed-89bc-c3cf438d50ae",
+          "code": "300",
+          "temp": "9.5",
+          "windSpeed": "11",
+          "pressure": "1001",
+          "windDir": "98"
         }
-      ]
+      ],
+      "latestReading": {
+        "id": "f0588d70-296e-11ed-89bc-c3cf438d50ae",
+        "code": "100",
+        "temp": "5.5",
+        "windSpeed": "5.5",
+        "pressure": "999",
+        "windDir": "92"
+      },
+      "code": "100",
+      "windBft": 1,
+      "tempF": "41.90",
+      "pressure": "999",
+      "tempC": "5.5",
+      "degreesToCompass": "East South East",
+      "windChill": "4.47",
+      "codeIcon": "ui inverted yellow sun outline icon",
+      "codeWeather": "Clear",
+      "maxTemp": "5.5",
+      "minTemp": "0.5",
+      "maxWindSpeed": "5.5",
+      "minWindSpeed": "3.5",
+      "maxPressure": "999",
+      "minPressure": "1000"
     }
   ]
 }
