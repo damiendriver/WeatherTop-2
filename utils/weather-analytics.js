@@ -2,6 +2,7 @@
 
 const weatherAnalytics = {
   updateWeather(station) {
+    
     if (station.readings.length > 0) {
       const latestReading = this.getLatestReading(station.readings);
       station.latestReading = latestReading;
@@ -127,21 +128,21 @@ const weatherAnalytics = {
 
   codeWeather(code) {
     let weather = null;
-        if (code == 100) {
+        if (code <= 100) {
             weather = "Clear";
-        } else if (code == 200) {
+        } else if (code > 100 && code <= 200) {
             weather = "Partial Clouds";
-        } else if (code == 300) {
+        } else if (code > 200 && code <= 300) {
             weather = "Cloudy";
-        } else if (code == 400) {
+        } else if (code > 300 && code <= 400) {
             weather = "Light Showers";
-        } else if (code == 500) {
+        } else if (code > 500 && code <= 600) {
             weather = "Heavy Showers";
-        } else if (code == 600) {
+        } else if (code > 600 && code <= 700) {
             weather = "Rain";
-        } else if (code == 700) {
+        } else if (code > 700 && code <= 800) {
             weather = "Snow";
-        } else if (code == 800) {
+        } else if (code > 800) {
             weather = "Thunder";
         }
         return weather;
@@ -149,22 +150,22 @@ const weatherAnalytics = {
   
   codeIcon(code) {
     let icon = null;
-        if (code == 100) {
+        if (code <= 100) {
             icon = "ui inverted yellow sun outline icon";
-        } else if (code == 200) {
+        } else if (code > 100 && code <= 200) {
             icon = "ui yellow cloud sun icon";
-        } else if (code == 300) {
-            icon = "cloud";
-        } else if (code == 400) {
-            icon = "cloud sun rain";
-        } else if (code == 500) {
-            icon = "cloud showers heavy";
-        } else if (code == 600) {
-            icon = "cloud rain";
-        } else if (code == 700) {
+        } else if (code > 200 && code <= 300) {
+            icon = "ui grey cloud icon";
+        } else if (code > 300 && code <= 400) {
+            icon = "ui blue cloud sun rain icon";
+        } else if (code > 500 && code <= 600) {
+            icon = "ui blue cloud showers heavy icon";
+        } else if (code > 600 && code <= 700) {
+            icon = "ui blue cloud rain icon";
+        } else if (code > 700 && code <= 800) {
             icon = "ui inverted white snowflake outline icon";
-        } else if (code == 800) {
-            icon = "bolt";
+        } else if (code > 800) {
+            icon = "ui red bolt icon";
         }
         return icon;
     },

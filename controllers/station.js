@@ -5,6 +5,7 @@ const stationStore = require("../models/station-store.js");
 const weatherAnalytics = require("../utils/weather-analytics.js");
 const uuid = require('uuid');
 
+
 const station = {
   index(request, response) {
     const stationId = request.params.id;
@@ -41,6 +42,7 @@ const station = {
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
       windDir: request.body.windDir,
+      date: new Date().toISOString(),
     };
       logger.info('New Reading = ', newReading);
     stationStore.addReading(stationId, newReading);
