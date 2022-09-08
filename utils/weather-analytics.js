@@ -1,5 +1,8 @@
 "use strict";
 
+const logger = require("../utils/logger");
+const axios = require("axios");
+
 const weatherAnalytics = {
   updateWeather(station) {
     
@@ -17,10 +20,13 @@ const weatherAnalytics = {
       station.codeWeather = this.codeWeather(latestReading.code);
       station.maxTemp = weatherAnalytics.getMaxTemp(station);
       station.minTemp = weatherAnalytics.getMinTemp(station);
+      station.tempTrend = weatherAnalytics.getTempTrend(station);
       station.maxWindSpeed = weatherAnalytics.getMaxWindSpeed(station);
       station.minWindSpeed = weatherAnalytics.getMinWindSpeed(station);
+      station.windTrend = weatherAnalytics.getWindTrend(station);
       station.maxPressure = weatherAnalytics.getMaxPressure(station);
       station.minPressure = weatherAnalytics.getMinPressure(station);
+      station.pressureTrend = weatherAnalytics.getPressureTrend(station);
       
       return latestReading;
     }
@@ -136,7 +142,7 @@ const weatherAnalytics = {
             weather = "Cloudy";
         } else if (code > 300 && code <= 400) {
             weather = "Light Showers";
-        } else if (code > 500 && code <= 600) {
+        } else if (code > 400 && code <= 600) {
             weather = "Heavy Showers";
         } else if (code > 600 && code <= 700) {
             weather = "Rain";
@@ -158,7 +164,7 @@ const weatherAnalytics = {
             icon = "ui grey cloud icon";
         } else if (code > 300 && code <= 400) {
             icon = "ui blue cloud sun rain icon";
-        } else if (code > 500 && code <= 600) {
+        } else if (code > 400 && code <= 600) {
             icon = "ui blue cloud showers heavy icon";
         } else if (code > 600 && code <= 700) {
             icon = "ui blue cloud rain icon";
@@ -247,6 +253,45 @@ const weatherAnalytics = {
     }
     return minPressure;
   },
+  
+  getTempTrend(station) {
+  if (station.readings.length > 2) {
+    let lastThreeReadings = station.readings.slice(station.readings.length-3, station.readings.length)
+    if (lastThreeReadings[2].temp > lastThreeReadings[1].temp && lastThreeReadings[1].temp > lastThreeReadings[0].temp) {
+      return "big green arrow up icon"
+    }
+    if (lastThreeReadings[2].temp < lastThreeReadings[1].temp && lastThreeReadings[1].temp < lastThreeReadings[0].temp) {
+      return "big orange arrow down icon"
+    }
+    return "big purple arrow right icon"
+  }
+},
+  
+  getWindTrend(station){
+  if (station.readings.length > 2) {
+    let lastThreeReadings = station.readings.slice(station.readings.length-3, station.readings.length)
+    if (lastThreeReadings[2].windSpeed > lastThreeReadings[1].windSpeed && lastThreeReadings[1].windSpeed > lastThreeReadings[0].windSpeed) {
+      return "big green arrow up icon"
+    }
+    if (lastThreeReadings[2].windSpeed < lastThreeReadings[1].windSpeed && lastThreeReadings[1].windSpeed < lastThreeReadings[0].windSpeed) {
+      return "big orange arrow down icon"
+    }
+    return "big purple arrow right icon"
+  }
+},
+  
+  getPressureTrend(station){
+  if (station.readings.length > 2) {
+    let lastThreeReadings = station.readings.slice(station.readings.length-3, station.readings.length)
+    if (lastThreeReadings[2].pressure > lastThreeReadings[1].pressure && lastThreeReadings[1].pressure > lastThreeReadings[0].pressure) {
+      return "big green arrow up icon"
+    }
+    if (lastThreeReadings[2].pressure < lastThreeReadings[1].pressure && lastThreeReadings[1].pressure < lastThreeReadings[0].pressure) {
+      return "big orange arrow down icon"
+    }
+    return "big purple arrow right icon"
+  }
+},
   
 };
 
