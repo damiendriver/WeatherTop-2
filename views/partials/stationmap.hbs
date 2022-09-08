@@ -1,0 +1,18 @@
+<section class="ui segment" id="map"></section>
+
+<script>
+
+var map = L.map('map').setView([52.16, -7.152], 9);
+  
+ 
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+  {{#each stations}}
+L.marker([{{lat}}, {{lng}}]).addTo(map)
+    .bindPopup('{{name}}<br> {{lat}} , {{lng}}')
+    .openPopup();
+{{/each}}
+
+</script>
