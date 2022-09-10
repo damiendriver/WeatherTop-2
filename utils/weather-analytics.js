@@ -10,7 +10,7 @@ const weatherAnalytics = {
       const latestReading = this.getLatestReading(station.readings);
       station.latestReading = latestReading;
       station.code = latestReading.code;
-      station.windBft = weatherAnalytics.beafourt(latestReading.windSpeed);
+      station.windBft = weatherAnalytics.beaufort(latestReading.windSpeed);
       station.tempF = weatherAnalytics.tempF(latestReading.temp).toFixed(2);
       station.pressure = latestReading.pressure;
       station.tempC = latestReading.temp;
@@ -61,7 +61,7 @@ const weatherAnalytics = {
     else return 0;
   },
 
-  beafourt(windSpeed) {
+  beaufort(windSpeed) {
     if (windSpeed == 0) {
       return 0;
     } else if (windSpeed >= 1 && windSpeed <= 6) {
