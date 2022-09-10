@@ -20,6 +20,13 @@
       "email": "driverdamien@hotmail.com",
       "password": "test123",
       "id": "2ac50a10-2942-11ed-83a7-c1264e7afbfe"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Driver",
+      "email": "tom@driver.com",
+      "password": "tom123",
+      "id": "aa7f7e10-3037-11ed-8ce4-77e489727358"
     }
   ]
 }

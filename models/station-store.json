@@ -205,6 +205,14 @@
       "pressureTrend": "big purple arrow right icon"
     },
     {
+      "id": "f06b93f0-3037-11ed-8ce4-77e489727358",
+      "userid": "aa7f7e10-3037-11ed-8ce4-77e489727358",
+      "name": "Hook Head",
+      "lat": "52.123",
+      "lng": "-6.929",
+      "readings": []
+    },
+    {
       "id": "d2264c20-296e-11ed-89bc-c3cf438d50ae",
       "userid": "2ac50a10-2942-11ed-83a7-c1264e7afbfe",
       "name": "Kilmore",
@@ -373,7 +381,7 @@
       "minWindSpeed": 4.02,
       "maxPressure": 1006,
       "minPressure": "1000",
-      "tempTrend": "big purple arrow right icon",
+      "tempTrend": "big orange arrow down icon",
       "windTrend": "big purple arrow right icon",
       "pressureTrend": "big purple arrow right icon"
     },
@@ -496,6 +504,55 @@
             "13/8/2022",
             "14/8/2022",
             "15/8/2022"
+          ]
+        },
+        {
+          "id": "bf101660-30e5-11ed-9c94-71c87b43e623",
+          "code": 801,
+          "temp": 15.46,
+          "windSpeed": 4.52,
+          "pressure": 1018,
+          "windDir": 27,
+          "date": "2022-09-10T08:51:22.951Z",
+          "tempTrend": [
+            15.77,
+            15.75,
+            18,
+            15.14,
+            14.7,
+            15.26,
+            14.97,
+            15.4
+          ],
+          "windTrend": [
+            4.7,
+            9.71,
+            10.21,
+            11.08,
+            6.94,
+            6.96,
+            5.21,
+            4.71
+          ],
+          "pressureTrend": [
+            1018,
+            1014,
+            1010,
+            1010,
+            1012,
+            1019,
+            1020,
+            1018
+          ],
+          "trendLabels": [
+            "10/8/2022",
+            "11/8/2022",
+            "12/8/2022",
+            "13/8/2022",
+            "14/8/2022",
+            "15/8/2022",
+            "16/8/2022",
+            "17/8/2022"
           ]
         }
       ],
@@ -692,35 +749,73 @@
           "pressure": "1105",
           "windDir": "82",
           "date": "2022-09-08T14:25:49.309Z"
+        },
+        {
+          "id": "22a6d5d0-301c-11ed-afed-99c94a037156",
+          "code": 804,
+          "temp": 16,
+          "windSpeed": 6.26,
+          "pressure": 1008,
+          "windDir": 309,
+          "date": "2022-09-09T08:48:11.693Z",
+          "tempTrend": [
+            15.95,
+            17.36,
+            16.14,
+            16.7,
+            15.95,
+            16.08,
+            17.23,
+            18.41
+          ],
+          "trendLabels": [
+            "9/8/2022",
+            "10/8/2022",
+            "11/8/2022",
+            "12/8/2022",
+            "13/8/2022",
+            "14/8/2022",
+            "15/8/2022",
+            "16/8/2022"
+          ]
+        },
+        {
+          "id": "3bb7c430-301c-11ed-afed-99c94a037156",
+          "code": "400",
+          "temp": "18",
+          "windSpeed": "8",
+          "pressure": "1001",
+          "windDir": "355",
+          "date": "2022-09-09T08:48:53.747Z"
         }
       ],
       "latestReading": {
-        "id": "22b7fad0-2f82-11ed-9345-4fee4d188070",
-        "code": "750",
-        "temp": "11",
-        "windSpeed": "3",
-        "pressure": "1105",
-        "windDir": "82",
-        "date": "2022-09-08T14:25:49.309Z"
+        "id": "3bb7c430-301c-11ed-afed-99c94a037156",
+        "code": "400",
+        "temp": "18",
+        "windSpeed": "8",
+        "pressure": "1001",
+        "windDir": "355",
+        "date": "2022-09-09T08:48:53.747Z"
       },
-      "code": "750",
-      "windBft": 1,
-      "tempF": "51.80",
-      "pressure": "1105",
-      "tempC": "11",
-      "degreesToCompass": "East South East",
-      "windChill": "11.60",
-      "codeIcon": "ui inverted white snowflake outline icon",
-      "codeWeather": "Snow",
-      "maxTemp": 17.65,
+      "code": "400",
+      "windBft": 2,
+      "tempF": "64.40",
+      "pressure": "1001",
+      "tempC": "18",
+      "degreesToCompass": "North",
+      "windChill": "18.40",
+      "codeIcon": "ui blue cloud sun rain icon",
+      "codeWeather": "Light Showers",
+      "maxTemp": "18",
       "minTemp": "11",
-      "maxWindSpeed": 4.92,
+      "maxWindSpeed": "8",
       "minWindSpeed": "1",
       "maxPressure": "1105",
-      "minPressure": 1002,
-      "tempTrend": "big purple arrow right icon",
-      "windTrend": "big purple arrow right icon",
-      "pressureTrend": "big purple arrow right icon"
+      "minPressure": "1001",
+      "tempTrend": "big green arrow up icon",
+      "windTrend": "big green arrow up icon",
+      "pressureTrend": "big orange arrow down icon"
     }
   ]
 }

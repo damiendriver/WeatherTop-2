@@ -2,17 +2,14 @@
 
 <section class="ui left aligned middle aligned segment">
   <h2 class="ui header">
-    {{station.name}}
+    <u>{{station.name}}</u>
   </h2>
    <p>
     {{>latestreadings}}
   </p>
-  {{>trendchart}}
+    {{>weather-charts}}
     {{>reading-table}}
     {{>addreading}}
-  
-  <form class="ui basic form" action="/station/{{station.id}}/addreport" method="POST">
-    <button class="ui yellow submit button">Auto Generate Report</button>
-  </form>
+    {{>autoreading}}
   
 </section>

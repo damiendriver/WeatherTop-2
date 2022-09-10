@@ -1,0 +1,31 @@
+<div class="ui segment" id="chartwind"></div>
+<script>
+  const datawind = {
+    labels: [
+      {{#each reading.trendLabels}}
+        "{{this}}",
+      {{/each}}
+    ],
+    datasets: [
+      {
+        name: "WindSpeed", 
+        type: "line",
+        values: [
+          {{#each reading.windTrend}}
+            {{this}},
+          {{/each}}
+        ]
+      },
+      
+    ]
+  }
+
+  const chartwind = new frappe.Chart("#chartwind", {
+    title: "Wind Trends",
+    data: datawind,
+    type: 'line',
+    lineOptions: {dotSize: 8},
+    height: 200,
+    colors: ['blue'],
+  })
+</script>
