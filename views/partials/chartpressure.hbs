@@ -1,0 +1,30 @@
+<div class="ui segment" id="chartpressure"></div>
+<script>
+  const datapressure = {
+    labels: [
+      {{#each reading.trendLabels}}
+        "{{this}}",
+      {{/each}}
+    ],
+    datasets: [
+      {
+        name: "Pressure", 
+        type: "line",
+        values: [
+          {{#each reading.pressureTrend}}
+            {{this}},
+          {{/each}}
+        ]
+      }
+      
+    ]
+  }
+
+  const chartpressure = new frappe.Chart("#chartpressure", {
+    title: "Pressure Trends",
+    data: datapressure,
+    type: 'bar',
+    height: 200,
+    colors: ['purple'],
+  })
+</script>

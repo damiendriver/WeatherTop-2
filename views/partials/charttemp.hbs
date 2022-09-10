@@ -1,6 +1,6 @@
-<div class="ui segment" id="chart"></div>
+<div class="ui segment" id="charttemp"></div>
 <script>
-  const data = {
+  const datatemp = {
     labels: [
       {{#each reading.trendLabels}}
         "{{this}}",
@@ -15,15 +15,17 @@
             {{this}},
           {{/each}}
         ]
-      }
+      },
+      
     ]
   }
 
-  const chart = new frappe.Chart("#chart", {
-    title: "Temperature Trend",
-    data: data,
+  const charttemp = new frappe.Chart("#charttemp", {
+    title: "Temp Trends",
+    data: datatemp,
     type: 'line',
     lineOptions: {dotSize: 8},
     height: 200,
+    colors: ['red'],
   })
 </script>

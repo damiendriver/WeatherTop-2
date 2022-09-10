@@ -1,21 +1,21 @@
 {{> menu id="dashboard"}}
 
 {{#each stations}}
-<section class="ui segment">
+<section class="ui yellow segment">
   <h2 class="ui header">
-    {{name}}
+    <u>{{name}}</u>
   </h2>
   <p>
      {{>station-panel}}
   </p>
 
- <section class="ui stacked segment">
+ <section class="ui inverted yellow segment">
     
     <a href="/station/{{id}}" class="ui icon button">
-      <i class="green icon folder open"></i>
+      <i class="ui green icon folder open"></i>
     </a>
     <a href="/dashboard/deletestation/{{id}}" class="ui icon button">
-      <i class="red icon trash"></i>
+      <i class="ui red icon trash"></i>
     </a>
   </section>
 </section>
